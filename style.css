@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --primary-color:#FFB607;
+    --bg-color:#FFFFFF
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html,body{
+    overflow-x: hidden;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 1;
+    font-size: 1.5rem;
+
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+    max-width: 2160px;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+nav{
+background-color: #f3f3f3;
+box-shadow: 4px 4px 20px 0px #d61616;
+
+
+
+}
+/* Nav bar  */
+.nav-container{
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.nav-logo span i{
+    font-size: 5rem;
+    color: var(--primary-color);
+}
+
+.links{
+    display: flex;
+    gap: 5rem;
+}
+
+.links li a{
+    color: inherit;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.link{
+    position: relative;
+}
+.link::after{
+  content: "";
+  position: absolute;
+  background-color: var(--primary-color);
+  width: 0%;
+  height: 2px;
+  /* left: 0; */
+  left: 50%;
+  bottom: -2px;
+  transform: translateX(-50%);
+  transition: 0.5S;
+}
+.link:hover::after{
+    width: 100%;
+}
+
+.nav-right{
+    display: flex;
+    gap: 5rem;
+}
+.nav-right h3{
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.nav-right span i,
+.nav-right input
+{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* header */
+.header-container{
+    background-image: url("https://images.pexels.com/photos/4577692/pexels-photo-4577692.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    width: 100vw;
+    height: 100vh;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
